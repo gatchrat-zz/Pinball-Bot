@@ -1,0 +1,8 @@
+H:\Programmer\VisualStudioprojekts\PinballBot\PinballBot\bin\Debug\PinballBot.exe
+H:\Programmer\VisualStudioprojekts\PinballBot\PinballBot\bin\Debug\PinballBot.pdb
+H:\Programmer\VisualStudioprojekts\PinballBot\PinballBot\obj\Debug\PinballBot.csprojResolveAssemblyReference.cache
+H:\Programmer\VisualStudioprojekts\PinballBot\PinballBot\obj\Debug\PinballBot.Form1.resources
+H:\Programmer\VisualStudioprojekts\PinballBot\PinballBot\obj\Debug\PinballBot.Properties.Resources.resources
+H:\Programmer\VisualStudioprojekts\PinballBot\PinballBot\obj\Debug\PinballBot.csproj.GenerateResource.Cache
+H:\Programmer\VisualStudioprojekts\PinballBot\PinballBot\obj\Debug\PinballBot.exe
+H:\Programmer\VisualStudioprojekts\PinballBot\PinballBot\obj\Debug\PinballBot.pdb
