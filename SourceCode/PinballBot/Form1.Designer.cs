@@ -62,9 +62,8 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(83, 195);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
             // 
             // label3
             // 
@@ -80,9 +79,8 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(83, 166);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
             // 
             // label5
             // 
@@ -113,6 +111,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

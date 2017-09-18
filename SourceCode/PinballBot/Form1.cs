@@ -23,7 +23,9 @@ namespace PinballBot
         public Form1()
         {
             InitializeComponent();
-           
+            label2.Text ="-";
+            label4.Text = "-";
+
         }
         
         private void button1_Click(object sender, EventArgs e)
@@ -42,7 +44,7 @@ namespace PinballBot
                 {
                     for (int x = 0; x < 16; x++)
                     {
-                        //Zweit und dritt letzte stelle wird durchlaufen
+                        //Searching area for correct adresses
                         startValue = 0x254400F + i * (16 * 16) + y * (16) + x ;
                         if (mem.getsingleValue(Name, startValue, "Byte") == 40 && x == 0)
                         {
@@ -51,6 +53,7 @@ namespace PinballBot
                         if (mem.getsingleValue(Name, startValue, "Int") == 319)
                         {
                             foundValueX = startValue;
+                         //   StartBall();
                         }
                     }
                    
@@ -72,7 +75,13 @@ namespace PinballBot
 
 
         }
-
+        void StartBall()
+        {
+            Process myProcess = Process.GetProcessesByName("Pinball").FirstOrDefault();
+            PostMessage(myProcess.MainWindowHandle, 0x0100, 0x20, 0);
+            System.Threading.Thread.Sleep(500);
+            PostMessage(myProcess.MainWindowHandle, 0x0101, 0x20, 0);
+        }
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -122,6 +131,11 @@ namespace PinballBot
                     up = true;
                 }
              }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
